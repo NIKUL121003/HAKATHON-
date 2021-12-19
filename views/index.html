@@ -1,0 +1,181 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:visited {
+          color: rgba(212, 211, 211, 0.603);
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+          text-align: center;
+        }
+
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #ecc6b7;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #e98e8e;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {
+            padding-top: 15px;
+          }
+          .sidenav a {
+            font-size: 18px;
+          }
+        }
+      </style>
+
+      <!-- Bootstrap CSS -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"
+      />
+
+      <title>Hello, world!</title>
+    </head>
+    <body class="p-1 mb-2 bg-secondary text-black-50">
+      <div class="d-block bg-light">
+        <div class="mx-auto container" style="width: 200px">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="CHEST.HTML">CHEST</a>
+            <a href="SHOULDERS.HTML">SHOULDERS</a>
+            <a href="ABBS.HTML">ABBS</a>
+            <a href="BICEPS.HTML">BICEPS</a>
+            <a href="BACK.HTML">BACK</a>
+            <a href="LEGS.HTML">LEGS</a>
+            <a href="TRICEPS.HTML">TRICEPS</a>
+          </div>
+          <span
+            align="center"
+            style="font-size: 40px; cursor: pointer"
+            onclick="openNav()"
+          >
+            EXERCISES</span
+          >
+        </div>
+      </div>
+      <div class="m-4 container" style="width: auto">
+        <a href="CHEST.HTML" style="text-decoration: none"
+          ><img src="../assets/IMG/First/Chest.jpg" class="img-fluid" />
+          <h1 align="center">CHEST</h1>
+        </a>
+      </div>
+
+      <div class="m-4 container" style="width: auto">
+        <a href="SHOULDERS.HTML" style="text-decoration: none"
+          ><img src="../assets/IMG/First/SHOULDER.jpg" class="img-fluid" />
+          <h1 align="center">SHOULDERS</h1>
+        </a>
+      </div>
+
+      <div class="m-4 container" style="width: auto">
+        <a href="ABBS.HTML" style="text-decoration: none"
+          ><img src="../assets/IMG/First/AB.jpg" class="img-fluid" />
+          <h1 align="center">ABS</h1>
+        </a>
+      </div>
+
+      <div class="m-4 container" style="width: auto">
+        <a href="BICEPS.HTML" style="text-decoration: none"
+          ><img src="../assets/IMG/First/Biceps.jpg" class="img-fluid" />
+          <h1 align="center">BICEPS</h1>
+        </a>
+      </div>
+
+      <div class="m-4 container" style="width: auto">
+        <a href="BACK.HTML" style="text-decoration: none"
+          ><img src="../assets/IMG/First/Back.jpg" class="img-fluid" />
+          <h1 align="center">BACK</h1>
+        </a>
+      </div>
+
+      <div class="m-4 container" style="width: auto">
+        <a href="LEGS.HTML" style="text-decoration: none"
+          ><img src="../assets/IMG/First/Legs.jpg" class="img-fluid" />
+          <h1 align="center">LEGS</h1>
+        </a>
+      </div>
+
+      <div class="m-4 container" style="width: auto">
+        <a href="TRICEPS.HTML" style="text-decoration: none"
+          ><img src="../assets/IMG/First/Triceps.jpg" class="img-fluid" />
+          <h1 align="center">TRICEPS</h1>
+        </a>
+      </div>
+
+      <div class="container align-bottom">
+        Made by <u><b>NIKUL KUMAR</b></u>
+      </div>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "60%";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
+    </body>
+  </html>
+</html>
